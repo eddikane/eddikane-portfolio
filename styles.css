@@ -1,17 +1,92 @@
 body {
   font-family: Arial, sans-serif;
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
-  padding: 20px;
+  padding: 24px;
+  background: #f7f9fc;
+  color: #1f2937;
 }
 
 header {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 28px 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  margin-bottom: 28px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0;
+}
+
+header a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  margin-bottom: 18px;
+}
+
+h2 {
+  margin-top: 0;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
 }
 
 .project {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 14px;
+  background: #ffffff;
 }
+
+.project h3 {
+  margin: 0 0 8px 0;
+}
+
+.project ul {
+  margin: 10px 0;
+  padding-left: 18px;
+}
+
+.project a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+
+.tag {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
