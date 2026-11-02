@@ -2,76 +2,449 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Edward Kane | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Edward Kane's software development portfolio featuring web applications, C# projects, and technical skills."
+  >
+  <title>Edward Kane | Software Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top">Edward Kane</a>
 
-<header>
-  <h1>Edward Kane</h1>
-  <p>Computer Science / Software Engineering Student</p>
-  <p>
-    <a href="resume.pdf">Resume</a> |
-    <a href="https://www.linkedin.com/in/edward-kane-41ab27253/">LinkedIn</a> |
-    <a href="https://github.com/eddikane/Portfolio">GitHub</a>
-  </p>
-</header>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a Computer Science student at BYU–Idaho with experience building
-    console applications and web projects.
-  </p>
-</section>
+  <main id="top">
 
-<section>
-  <h2>Projects</h2>
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="eyebrow">Computer Science Student • Software Developer</p>
 
-  <div class="project">
-    <h3>Soccer Performance Tracker </h3>
-    <p>
-      Console-based C# application that tracks player stats and generates
-      training plans using Object-oriented programming principles.
-    </p>
-    <ul>
-      <li>Technologies: C#, OOP</li>
-      <li>Concepts: Abstraction, Inheritance, Polymorphism</li>
-    </ul>
-    <a href="https://github.com/eddikane/cse210-projects/blob/main/final/FinalProject/Program.cs">View Code</a>
-  </div>
+      <h1>Hi, I'm Edward Kane.</h1>
 
-  <div class="project">
-  <h3>Calorie Tracker Web App </h3>
-  <p>
-    A front-end calorie tracking application that allows users to log food
-    items and calculate total daily calories using JavaScript.
-  </p>
-  <ul>
-    <li>Technologies: HTML, CSS, JavaScript</li>
-    <li>Skills: DOM manipulation, event handling, user input</li>
-  </ul>
-  <a href="https://github.com/eddikane/wdd131/tree/main/calorietracker/index.html">View Code</a>
-  <br>
-  <a href="https://eddikane.github.io/wdd131/calorietracker/index.html">Live Demo</a>
-</div>
+      <p class="hero-copy">
+        I build practical software with C#, Python, JavaScript, SQL, and modern web technologies.
+        I enjoy solving problems, learning new tools, and turning ideas into useful applications.
+      </p>
 
-<div class="project">
-  <h3>Interactive Registration Form</h3>
-  <p>
-    A web-based registration form that validates user input and provides
-    real-time feedback using JavaScript.
-  </p>
-  <ul>
-    <li>Technologies: HTML, CSS, JavaScript</li>
-    <li>Skills: form validation, event handling, conditional logic</li>
-  </ul>
-  <a href="https://github.com/eddikane/wdd131/tree/main/register">View Code</a>
-  <br>
-  <a href="https://eddikane.github.io/wdd131/register/">Live Demo</a>
-</div>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
 
-</section>
+        <a
+          class="button secondary"
+          href="resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Resume
+        </a>
+      </div>
+
+      <div class="social-links" aria-label="Professional profiles">
+        <a
+          href="https://github.com/eddikane"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/edward-kane-41ab27253/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Building a strong foundation in software development.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          I am a Computer Science student at Brigham Young University–Idaho focused on software
+          development and software engineering. Through coursework and personal projects, I have
+          built experience with object-oriented programming, databases, web development,
+          data structures, debugging, and application design.
+        </p>
+
+        <p>
+          I am currently seeking software engineering and software development internship
+          opportunities where I can contribute to real projects, learn from experienced
+          developers, and continue growing as an engineer.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects</h2>
+          <p>
+            Selected projects that demonstrate how I apply software development concepts
+            to real problems.
+          </p>
+        </div>
+
+
+        <!-- FEATURED PROJECTS -->
+        <div class="project-grid">
+
+          <article class="project-card featured-project">
+            <div class="project-topline">
+              <span class="project-label">Featured Project</span>
+              <span class="project-type">Web Application</span>
+            </div>
+
+            <h3>VerseSync</h3>
+
+            <p>
+              Interactive scripture study web application with weekly reading schedules,
+              shared study insights, reply functionality, and cloud-backed data that stays
+              synchronized across users and sessions.
+            </p>
+
+            <div class="tags" aria-label="VerseSync technologies">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Firebase</span>
+              <span>Firestore</span>
+            </div>
+
+            <ul class="project-details">
+              <li>
+                Implemented cloud-backed CRUD functionality for shared insights and replies.
+              </li>
+              <li>
+                Built dynamic DOM interactions for forms, filtering, and collaborative
+                study features.
+              </li>
+              <li>
+                Used Git and GitHub for version control throughout development.
+              </li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                href="https://versesync-4fdbd.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo →
+              </a>
+
+              <a
+                href="https://github.com/eddikane/VerseSync"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub Repository →
+              </a>
+            </div>
+          </article>
+
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-label">C# Project</span>
+              <span class="project-type">Console Application</span>
+            </div>
+
+            <h3>Soccer Performance Tracker</h3>
+
+            <p>
+              C# application for tracking player performance and generating position-based
+              training recommendations. Built to strengthen object-oriented design and
+              application structure.
+            </p>
+
+            <div class="tags" aria-label="Soccer Performance Tracker technologies">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>OOP</span>
+            </div>
+
+            <ul class="project-details">
+              <li>
+                Modeled players and position-specific behavior with reusable classes.
+              </li>
+              <li>
+                Applied encapsulation, inheritance, abstraction, and polymorphism.
+              </li>
+              <li>
+                Organized application logic into focused components for maintainability.
+              </li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/eddikane/soccer-performance-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub Repository →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- ADDITIONAL PROJECTS -->
+        <div class="more-projects">
+          <div class="subsection-heading">
+            <p class="eyebrow">More Work</p>
+            <h2>Additional Projects</h2>
+            <p>
+              Smaller projects that show additional experience with C#, JavaScript,
+              application logic, and front-end development.
+            </p>
+          </div>
+
+          <div class="small-project-grid">
+
+            <article class="small-project-card">
+              <h3>Workout Progress Tracker</h3>
+
+              <p>
+                C# application designed to track workout progress and organize training
+                data using object-oriented programming principles.
+              </p>
+
+              <div class="tags" aria-label="Workout Progress Tracker technologies">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>OOP</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/eddikane/workout-progress-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View GitHub Repository →
+                </a>
+              </div>
+            </article>
+
+
+            <article class="small-project-card">
+              <h3>Calorie Tracker Web App</h3>
+
+              <p>
+                Front-end web application that allows users to log food items and calculate
+                total daily calories using JavaScript.
+              </p>
+
+              <div class="tags" aria-label="Calorie Tracker technologies">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eddikane.github.io/wdd131/calorietracker/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo →
+                </a>
+
+                <a
+                  href="https://github.com/eddikane/wdd131/tree/main/calorietracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code →
+                </a>
+              </div>
+            </article>
+
+
+            <article class="small-project-card">
+              <h3>Interactive Registration Form</h3>
+
+              <p>
+                Responsive registration form with real-time validation, event handling,
+                conditional logic, and user feedback built with JavaScript.
+              </p>
+
+              <div class="tags" aria-label="Interactive Registration Form technologies">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eddikane.github.io/wdd131/register/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo →
+                </a>
+
+                <a
+                  href="https://github.com/eddikane/wdd131/tree/main/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code →
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Tools I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+
+          <div class="tags">
+            <span>C#</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+
+
+        <div class="skill-group">
+          <h3>Tools & Platforms</h3>
+
+          <div class="tags">
+            <span>.NET</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>MySQL</span>
+            <span>Firebase</span>
+            <span>Firestore</span>
+          </div>
+        </div>
+
+
+        <div class="skill-group">
+          <h3>Core Concepts</h3>
+
+          <div class="tags">
+            <span>Object-Oriented Programming</span>
+            <span>Data Structures</span>
+            <span>REST/API Fundamentals</span>
+            <span>Relational Databases</span>
+            <span>Debugging</span>
+            <span>Software Testing</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="section section-alt">
+      <div class="container education-grid">
+
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Brigham Young University–Idaho</h2>
+          <p class="education-degree">Bachelor of Science in Computer Science</p>
+          <p>Expected December 2027</p>
+        </div>
+
+        <div class="coursework">
+          <h3>Relevant Coursework</h3>
+
+          <p>
+            Data Structures, Object-Oriented Programming, Database Design & SQL,
+            Web Application Development, Cloud Databases, and Software Engineering.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's connect.</h2>
+
+      <p>
+        I'm interested in software engineering and software development internship
+        opportunities and enjoy connecting with developers, recruiters, and teams
+        building useful technology.
+      </p>
+
+      <div class="hero-actions">
+        <a
+          class="button primary"
+          href="mailto:edwardkane1107@gmail.com"
+        >
+          Email Me
+        </a>
+
+        <a
+          class="button secondary"
+          href="https://www.linkedin.com/in/edward-kane-41ab27253/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Edward Kane</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
 </body>
 </html>
